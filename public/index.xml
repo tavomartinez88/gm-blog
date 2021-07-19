@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GusMartinez</title>
+    <link>https://tavomartinez88.github.io/gm-blog/</link>
+    <description>Recent content on GusMartinez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ar</language><atom:link href="https://tavomartinez88.github.io/gm-blog/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

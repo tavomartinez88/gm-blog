@@ -1,0 +1,152 @@
+baseURL: https://tavomartinez88.github.io/gm-blog/
+languageCode: es-ar
+title: GusMartinez
+theme: "hugo-profile"
+
+googleanalytics: UA-xxxxxx-x
+disqusShortname: "gusMartinez-posts"
+comments:
+  commentable:
+    posts: true # Blog posts
+Paginate: 3
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+enableEmoji: true
+params:
+  version: 3
+  favicon: /images/favicon.ico
+  # home
+  disable_home: false
+  profile_image: images/profile.jpeg
+  name: "Gus Martinez"
+  profession: "Backend Developer"
+  github: "https://github.com/tavomartinez88"
+  instagram: "https://www.instagram.com/gustavomartinezgranella/"
+  linkedin: "https://www.linkedin.com/in/gustavomartinezgranella/"
+
+  # About
+  disable_about: false
+  descripe_l1_person: "Hi, I'm Gus, a passionate backend developer. I tend to make use of modern web technologies to build apis and websites."
+  descripe_l2_person: "I enjoy share knowledge and motivate to people to try work with technology. You can find my works [here](#projects)"
+  skills:
+    - name: Java
+      percentage: 80
+    - name: Go
+      percentage: 35
+    - name: Terraform
+      percentage: 30
+    - name: Git
+      percentage: 95
+    - name: Aws
+      percentage: 30
+    - name: Maven
+      percentage: 65
+    - name: Unit Testing
+      percentage: 75
+
+  # Experience
+  disable_experience: false
+  experience:
+    - company: "eSolutions"
+      role: "Software developer"
+      startdate: Jan 2016
+      enddate: Jul 2017
+      featuredpoints:
+        - point: FullStack developer for a service.
+        - point: Requirement's Analisys and develop features and fix bugs on Backend and Frontend.
+        - point: The rubric was telecomunications
+    - company: "Atos"
+      role: "Software developer"
+      startdate: Jul 2017
+      enddate: Sep 2018
+      featuredpoints:
+        - point: FullStack developer for a product.
+        - point: Requirement's Analisys and develop features and fix bugs on Backend and Frontend to product for 4 provinces on Argentina.
+        - point: The rubric was transports
+    - company: "Incluit"
+      role: "Software developer"
+      startdate: Sep 2018
+      enddate: Aug 2019
+      featuredpoints:
+        - point: FullStack developer for a product.
+        - point: Requirement's Analisys and develop features on Backend and Frontend to product, it was a web system to Legal system for San Juan, Argentina.
+        - point: The rubric was Legal System
+    - company: "e-solutions"
+      role: "FullStack developer"
+      startdate: Jul 2019
+      enddate: Jul 2020
+      featuredpoints:
+        - point: FullStack developer for a product.
+        - point: Requirement's Analisys, develop features, fix bugs on Backend and Frontend and deployments.
+        - point: The rubric was telecomunications
+    - company: "Ualá"
+      role: "Backend developer"
+      startdate: Jul 2020
+      enddate: Present
+      featuredpoints:
+        - point: Backend developer for a product.
+        - point: Requirement's Analisys, develop features, fix bugs and deployments.
+        - point: The rubric is Fintech
+
+
+  # Education
+  disable_education: false
+  education:
+    - degree: "System Analyst"
+      branch: "Computation's science's Analyst"
+      university: "Universidad Nacional de Rio Cuarto"
+      startedyear: "2010"
+      graduation: "2015"
+
+  # Projects
+  disable_projects: false
+  projects:
+    - name: "SlackBot"
+      img: /images/project.png
+      githublink: "https://github.com/tavomartinez88/slack-bot"
+      description: "It's bot to register releases on dynamo using slack and aws chatbot"
+    - name: "Aura"
+      img: /images/aura.png
+      githublink: "https://bitbucket.org/gustavomartinezgranella/aura"
+      description: "Aura is an android app for people with epilepsy (it was discontinue because google change politics to send sms on background)"
+    - name: "Nexus and Jenkins from K8s"
+      img: /images/nexus.png
+      githublink: "https://bitbucket.org/gustavomartinezgranella/k8s-nexus-jenkins"
+      description: "Get up Nexus and Jenkins from k8s"
+
+  # Achievements
+  disable_achievements: true
+  achievements:
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+    - title: Competition winner
+      description: We are developed a product which can help others.
+      img: /images/achiv.jpg
+
+  # Contact
+  disable_contact: false
+  contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+  email: "gmartinezgranella@gmail.com"
+
+  # Footer
+  socialiconfooter: true
+  recentposts: true
+
+
+  # Blog
+  showdescription: false
+  tweet: false
