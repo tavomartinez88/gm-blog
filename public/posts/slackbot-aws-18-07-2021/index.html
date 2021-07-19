@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="icon" href="/images/favicon.ico" type="image/gif">
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="/css/all.min.css" media="all">
+<link rel="stylesheet" href="/css/fontawesome.min.css" media="all">
+<link rel="stylesheet" href="/css/v3/darkmode.css" media="all">
+
+<style>
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #6c757d transparent;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #6c757d;
+    }
+</style><link rel="stylesheet" href="/css/v3/navbar-footer.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+    rel="stylesheet">
+<meta name="description" content="" />
+<title>How do you make a bot using Aws?</title>
+
+<link href="/css/v3/post.css" rel="stylesheet">
+
+
+  
+
+</head>
+
+
+
+<body class="text-dark">
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script><div class="container">
+  <nav class="pt-3 navbar navbar-expand-lg navbar-light" data-aos="fade-down" data-aos-easing="linear"
+    data-aos-duration="500">
+    <a class="navbar-brand" href="/">
+      
+      <img src="/images/favicon.ico" width="30" height="30" class="d-inline-block align-top">
+      GusMartinez
+      
+    </a>
+
+
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto text-center">
+
+        
+        <li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="/#about" aria-label="about">About</a>
+        </li>
+        
+
+        
+        <li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="/#experience"
+            aria-label="experience">Experience</a>
+        </li>
+        
+
+        
+        <li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="/#education"
+            aria-label="education">Education</a>
+        </li>
+        
+
+        
+        <li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="/#projects" aria-label="projects">Projects</a>
+        </li>
+        
+
+        
+        
+
+        
+        <li class="nav-item navbar-text">
+          <a class="nav-link text-dark" href="/#contact" aria-label="contact">Contact</a>
+        </li>
+        
+
+        
+        <li class="nav-item navbar-text">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" autocomplete="on">
+            <label class="pt-2 darkmode-label" for="customSwitch1" style="cursor: pointer;">
+              <i class="fas fa-lg fa-moon"></i>
+              <i class="fas fa-lg fa-sun d-none text-warning"></i>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<section style="font-family: 'Roboto', sans-serif;">
+  <div class="container">
+    <div class="row blog-page-color">
+      <div class="col-md-9 py-4 px-0">
+        <div class="rounded shadow bg-light p-3 px-md-5 bg-light">
+          <h1 class="pb-2 text-center">How do you make a bot using Aws?</h1>
+          <div class="tag-list" style="margin: 10px; margin-left: 0px !important;">
+            
+              <a href="/tags/aws" class="btn btn-primary ">Aws</a>
+            
+              <a href="/tags/go" class="btn btn-primary ">Go</a>
+            
+              <a href="/tags/slack" class="btn btn-primary ">Slack</a>
+            
+              <a href="/tags/terraform" class="btn btn-primary ">Terraform</a>
+            
+          </div>
+          <article>
+            <h2 id="introduction">Introduction</h2>
+<blockquote>
+<p>Let&rsquo;s go build a bot to inform new releases using Go as language programming,
+Aws as infraestructure on cloud, Terraform as infraestructure as code.</p>
+</blockquote>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>An account on Aws</li>
+<li>Go 1.15 or greather installed</li>
+<li>Terraform 0.13.2 or greather installed</li>
+<li>Gomock 1.6.0 or greather downloaded</li>
+<li>Git and Github/GitLab/Bitbucket/Other</li>
+</ul>
+<h2 id="the-follow-picture-is-our-work-finished">The follow picture is our work finished</h2>
+<p><img src="https://raw.githubusercontent.com/tavomartinez88/slack-bot/main/docs/Slack-bot.png" alt="Alt text"></p>
+<h2 id="lets-go">Let&rsquo;s Go!!!!</h2>
+<blockquote>
+<p>The fisrt we are need define structure to our project, this is :</p>
+<ul>
+<li>dynamodb
+<ul>
+<li>mock_dynamodb(here put all mock files to dynamodb)</li>
+</ul>
+</li>
+<li>lambda
+<ul>
+<li>hanlder</li>
+<li>models</li>
+<li>processor</li>
+<li>utils</li>
+</ul>
+</li>
+<li>terraform</li>
+<li>docs (here locate images and diagrams)</li>
+</ul>
+<p>Well, now let&rsquo;s go initialize the module go, because we going to initialize repository, for it, you should run the
+next command :</p>
+</blockquote>
+<pre>
+    go mod init github.com/username/slack-bot
+</pre>
+<blockquote>
+<p>Then we are going to create the golang code for the lambda, the most important are on the folders handler and processor
+, but if you want watch more details about it, ypu can go to <a href="https://github.com/tavomartinez88/slack-bot">repo</a>.
+On folder hanlder do yoy should create a file named Handler.go</p>
+</blockquote>
+<pre>
+const (
+	FormatDateTimecategory = "01-02-2006 15:04:05"
+)
+
+func HandleRequest(ctx context.Context, request models.Request) error {
+	slackBotDb := dynamodb.GetSlackBotDb()
+	processor := p.NewProcessor(slackBotDb)
+	err := processor.Process(uuid.New().String(), time.Now().Format(FormatDateTimecategory), request)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+</pre>
+<blockquote>
+<p>Next, do you should create on folder processor a file named processor.go</p>
+</blockquote>
+<pre>
+type Processor struct {
+	SlackBotDb dynamodb.IDynamoSlackBotDb
+}
+
+func NewProcessor(i dynamodb.IDynamoSlackBotDb) *Processor {
+	return &Processor{i}
+}
+
+func (receiver *Processor) Process(id string, createdDate string, request models.Request) error {
+	logger.Info("Start Process")
+
+	_, err := utils.ValidInput(request)
+
+	if err != nil {
+		logger.Error("Invalid request", err)
+		return err
+	}
+
+	request.Id = id
+	request.CreateDate = createdDate
+
+	logger.Println("Send request to create release")
+
+	err = receiver.SlackBotDb.CreateRelease(request)
+
+	if err != nil {
+		logger.Error("Error trying create release on dynamodb", err)
+		logger.Info("Finished Process")
+		return err
+	}
+
+	logger.Println("Send request to create release successful")
+	logger.Info("Finished Process")
+	return nil
+}
+
+</pre>
+<blockquote>
+<p>After that, we are need create some resources on aws as table on dynamo db, for it do you should create file
+named main.tf on folder terraform/main.tf and place it :</p>
+</blockquote>
+<pre>
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.27"
+    }
+  }
+}
+
+provider "aws" {
+  profile = ""
+  region  = ""
+}
+</pre>
+<blockquote>
+<p>This is for define the cloud provider and provider info as your profile and region. After that add the follow code
+to create variables required and the table.</p>
+</blockquote>
+<pre>
+//------------------------------------------
+//  VARIABLES
+//------------------------------------------
+variable "slack-bot-release-app-name" {
+  description = "Lambda Notify Releases"
+  default = "slack-release-service"
+}
+
+variable "app_env" {
+  description = "Application environment tag"
+  default     = "dev"
+}
+
+locals {
+  app_id = "${lower(var.slack-bot-release-app-name)}-${lower(var.app_env)}"
+}
+
+//------------------------------------------
+//  DYNAMODB
+//------------------------------------------
+
+resource "aws_dynamodb_table" "slack-bot" {
+  name           = "Releases"
+  billing_mode   = "PAY_PER_REQUEST"
+  read_capacity  = 20
+  write_capacity = 20
+  hash_key       = "id"
+  stream_enabled   = true
+  stream_view_type = "NEW_AND_OLD_IMAGES"
+
+  attribute {
+    name = "id"
+    type = "S"
+  }
+
+  tags = {
+    Name        = "SlackBot"
+    Environment = "dev"
+  }
+}
+</pre>
+<blockquote>
+<p>Now, we are need add to terraform file the resources of kind role, this is required to allow invoke our lambda, add
+access to dynamo db and cloudwatch to logging</p>
+</blockquote>
+<pre><code>resource &quot;random_id&quot; &quot;unique_suffix&quot; {
+  byte_length = 2
+}
+
+resource &quot;aws_iam_role&quot; &quot;lambda_exec&quot; {
+  name_prefix = local.app_id
+
+  assume_role_policy = &lt;&lt;EOF
+{
+  &quot;Version&quot;: &quot;2012-10-17&quot;,
+  &quot;Statement&quot;: [
+    {
+      &quot;Action&quot;: &quot;sts:AssumeRole&quot;,
+      &quot;Principal&quot;: {
+        &quot;Service&quot;: &quot;lambda.amazonaws.com&quot;
+      },
+      &quot;Effect&quot;: &quot;Allow&quot;,
+      &quot;Sid&quot;: &quot;&quot;
+    }
+  ]
+}
+EOF
+
+}
+
+resource &quot;aws_iam_role_policy_attachment&quot; &quot;lambda_AmazonDynamoDBFullAccess&quot; {
+  role       = aws_iam_role.lambda_exec.name
+  policy_arn = &quot;arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess&quot;
+}
+
+resource &quot;aws_iam_role_policy_attachment&quot; &quot;lambda_CloudWatchFullAccess&quot; {
+  role       = aws_iam_role.lambda_exec.name
+  policy_arn = &quot;arn:aws:iam::aws:policy/CloudWatchFullAccess&quot;
+}
+</code></pre><blockquote>
+<p>After that, we are need build our code, dou you need run the follow code(navigate to folder that contain code lambda)
+,or execute to file sh as it&rsquo;s on github&rsquo;s<br>
+repository</p>
+</blockquote>
+<pre><code>rm -rf ./../bin &amp;&amp;\
+ mkdir ./../bin &amp;&amp;\
+ GOOS=linux go build -o ./../bin/slack-bot-release-aws-lambda &amp;&amp;\
+ cd ./../bin &amp;&amp;\
+ zip slack-bot-release.zip slack-bot-release-aws-lambda
+</code></pre><blockquote>
+<p>Then, now we are should create infraestructure on aws using terraform, for it, navigate to folder terraform and
+execute the follows steps:</p>
+<ul>
+<li>terraform init</li>
+<li>terraform plan</li>
+<li>terraform apply &ndash;auto-approve=true</li>
+</ul>
+<p>If it&rsquo;s ok, only left a step. Let&rsquo;s go create chatbot, because terraform not has a resource to automatize creation
+the service chatbot, we are should create it manually, for it follow this steps:</p>
+<ul>
+<li>You should access to aws chatbot under aws console</li>
+<li>Choose Slack as client
+<ul>
+<li>Choose the workspace in dropdown list</li>
+</ul>
+</li>
+<li>Configure new channel
+<ul>
+<li>On details set any name, e.g. bot-para-notificar-releases
+<ul>
+<li>Note: not check logging. it apply charge</li>
+</ul>
+</li>
+<li>Under Channel type, choose Private</li>
+<li>Enter channel ID (e.g. T026YK7T0Q5)
+<ul>
+<li>if you haven&rsquo;t any channel, you shoud go to slack for create channel</li>
+<li>if you have channel for it, enter id. (On my case it&rsquo;s C0271L15MBL)</li>
+</ul>
+</li>
+<li>Permissions
+<ul>
+<li>Set name e.g. bot-para-notificar-releases-role</li>
+<li>Policy templates :
+<ul>
+<li>Read-only command permissions</li>
+<li>Lambda-invoke command permissions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Notifications
+<ul>
+<li>select region sns topics(on my case, it&rsquo;s us-east-1)</li>
+<li>select topic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Finally, click on configure button</li>
+</ul>
+</blockquote>
+<h2 id="testing-our-bot">Testing our bot</h2>
+<blockquote>
+<p>Now, the better moment, let&rsquo;s go test, do you should go to slack and on the channel enter the follow
+snippet and change data if you want</p>
+</blockquote>
+<pre>
+@aws lambda invoke --function-name slack-release-service-dev
+--region us-east-1 
+--payload {
+    “title”: “titulo”,
+    “description”: “se realizo refacto de ...”,
+    “product”: “MyProduct”,
+    “detail”: “https://any-endpoint.com”,
+    “team”: “MyTeam”,
+    “status”: “IMPLEMENTADO”,
+    “owner”: “Gustavo Martinez”,
+    “result”: “EXITOSO”,
+    “observations”: “sin observaciones”
+}
+</pre>
+<blockquote>
+<p>this return a alert indicating the action to execute,
+this is for example</p>
+</blockquote>
+<p><img src="/images/aws-slack-bot/slack-aws.png" alt="Alt text"></p>
+<blockquote>
+<p>After that, it shoud ask if you want run command, for it click on &ldquo;Yes&rdquo;, then
+<img src="/images/aws-slack-bot/aws-confirm.png" alt="Alt text"></p>
+<p>Finally, do you watch the follow message from cloudwatch alert and if you verify
+on dynamo will be new release on table</p>
+</blockquote>
+<p><img src="/images/aws-slack-bot/cloudwatch.png" alt="Alt text"></p>
+<blockquote>
+<p>For doubt or suggestions write me
+Thank you!!!</p>
+</blockquote>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-md-3 py-4">
+        <div class="bg-light shadow p-4 rounded mb-2 bg-light">
+          <h4>Table of content</h4>
+          <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#the-follow-picture-is-our-work-finished">The follow picture is our work finished</a></li>
+    <li><a href="#lets-go">Let&rsquo;s Go!!!!</a></li>
+    <li><a href="#testing-our-bot">Testing our bot</a></li>
+  </ul>
+</nav>
+        </div>
+
+        <div class="bg-light shadow p-4 rounded mt-2 bg-light">
+          <ul>
+            <li>
+              <a target="blank" class="text-info"
+                href="https://twitter.com/share?text=How%20do%20you%20make%20a%20bot%20using%20Aws%3f&url=https%3a%2f%2ftavomartinez88.github.io%2fposts%2fslackbot-aws-18-07-2021%2f">
+                <i class="fab fa-twitter-square fa-lg"></i> Share on Twitter
+              </a>
+            </li>
+            <li>
+              <a target="blank" class="text-success"
+                href="https://api.whatsapp.com/send?text=How%20do%20you%20make%20a%20bot%20using%20Aws%3f: https%3a%2f%2ftavomartinez88.github.io%2fposts%2fslackbot-aws-18-07-2021%2f"
+                data-action="share/whatsapp/share">
+                <i class="fab fa-whatsapp-square fa-lg"></i> Share on Whatsapp
+              </a>
+            </li>
+            <li>
+              <a class="text-danger" target="blank"
+                href="mailto:?subject=How%20do%20you%20make%20a%20bot%20using%20Aws%3f&amp;body=Check out this site https%3a%2f%2ftavomartinez88.github.io%2fposts%2fslackbot-aws-18-07-2021%2f">
+                <i class="fas fa-envelope-open-text"></i> Share by Email
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gusMartinez-posts" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  
+  <div class="news container py-3" data-aos="fade-up" data-aos-easing="linear" data-aos-once="true">
+    
+    <div class="h3 text-center text-dark py-3 font-weight-bold">Recent posts</div>
+    <div class="row justify-content-center">
+      
+      <div class="col-lg-4 col-md-6 pt-2">
+        <a href="/posts/slackbot-aws-18-07-2021/" class="post-card-link">
+          <div class="card px-2 h-100">
+            <div class="card-head py-3">
+              <h5 class="card-title font-weight-bold px-2">How do you make a bot using Aws?</h5>
+              <div class="px-2">Introduction  Let&rsquo;s go build a bot to inform new releases using Go as language programming, Aws as infraestructure on cloud, Terraform as infraestructure as code.
+ Requirements  An account on Aws Go 1.15 or greather installed Terraform 0.13.2 or greather installed Gomock 1.6.0 or greather …</div>
+            </div>
+            <div class="mt-auto card-footer">
+              <span class="float-left">July 18, 2021</span>
+              <a href="/posts/slackbot-aws-18-07-2021/" class="float-right btn btn-outline-info btn-sm">Read</a>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+  <div class="text-center">
+    
+    <span class="px-1">
+      <a target="_blank" class="text-dark text-decoration-none" href="https://github.com/tavomartinez88" aria-label="github">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+          <path
+            d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+          <metadata>
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+              <rdf:Description about="https://iconscout.com/legal#licenses"
+                dc:title="Github, Online, Project, Hosting, Square"
+                dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout" dc:date="2016-12-14"
+                dc:format="image/svg+xml" dc:language="en">
+                <dc:creator>
+                  <rdf:Bag>
+                    <rdf:li>Font Awesome</rdf:li>
+                  </rdf:Bag>
+                </dc:creator>
+              </rdf:Description>
+            </rdf:RDF>
+          </metadata>
+        </svg>
+      </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+      <a target="_blank" class="text-white text-decoration-none" href="https://www.linkedin.com/in/gustavomartinezgranella/" aria-label="linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+          viewBox="0 0 512 512">
+          <rect width="512" height="512" fill="#0077b5" rx="15%" />
+          <circle cx="142" cy="138" r="37" />
+          <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+          <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+        </svg>
+      </a>
+    </span>
+    
+
+    
+
+    
+    <a class="text-danger text-decoration-none" href="https://www.instagram.com/gustavomartinezgranella/" aria-label="instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fd5" />
+          <stop offset=".328" stop-color="#ff543f" />
+          <stop offset=".348" stop-color="#fc5245" />
+          <stop offset=".504" stop-color="#e64771" />
+          <stop offset=".643" stop-color="#d53e91" />
+          <stop offset=".761" stop-color="#cc39a4" />
+          <stop offset=".841" stop-color="#c837ab" />
+        </radialGradient>
+        <path fill="url(#yOrnnhliCrdS2gy~4tD8ma)"
+          d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+        <radialGradient id="yOrnnhliCrdS2gy~4tD8mb" cx="11.786" cy="5.54" r="29.813"
+          gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#4168c9" />
+          <stop offset=".999" stop-color="#4168c9" stop-opacity="0" />
+        </radialGradient>
+        <path fill="url(#yOrnnhliCrdS2gy~4tD8mb)"
+          d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z" />
+        <path fill="#fff"
+          d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z" />
+        <circle cx="31.5" cy="16.5" r="1.5" fill="#fff" />
+        <path fill="#fff"
+          d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z" />
+      </svg>
+    </a>
+    
+
+    
+  </div>
+  
+  <div class="container bg-transparent py-4">
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center order-2 order-lg-1 order-md-1">
+        <div class="pb-2">
+          
+        </div>
+        &copy; 2021 All Rights Reserved
+      </div>
+    </div>
+  </div>
+</footer><script>
+    $('.darkmode-label').click(function () {
+      $("body").toggleClass("darkmode");
+      $(".fa-moon").toggleClass("d-none");
+      $(".fa-sun").toggleClass("d-none");
+      $("nav").toggleClass("navbar-dark");
+      $("nav").toggleClass("navbar-light");
+      $('.text-dark').addClass('darkmode-text-dark').removeClass('text-dark');
+      $('.text-muted').addClass('darkmode-text-muted').removeClass('text-muted');
+      if ($('input.custom-control-input').is(':checked')) {
+        $('.darkmode-text-dark').addClass('text-dark').removeClass('darkmode-text-dark');
+        $('.darkmode-text-muted').addClass('text-muted').removeClass('darkmode-text-muted');
+      };
+    });
+    if ($('input.custom-control-input').is(':checked')) {
+      $("body").toggleClass("darkmode");
+      $(".fa-moon").addClass("d-none");
+      $(".fa-sun").removeClass("d-none");
+      $("nav").toggleClass("navbar-dark");
+      $("nav").toggleClass("navbar-light");
+      $('.text-dark').addClass('darkmode-text-dark').removeClass('text-dark');
+      $('.text-muted').addClass('darkmode-text-muted').removeClass('text-muted');
+    };
+  </script>
+</body>
+
+
+</html>

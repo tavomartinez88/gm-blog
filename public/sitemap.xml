@@ -2,10 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tavomartinez88.github.io/gm-blog/categories/</loc>
+    <loc>https://tavomartinez88.github.io/tags/aws/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tavomartinez88.github.io/gm-blog/</loc>
+    <loc>https://tavomartinez88.github.io/tags/go/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tavomartinez88.github.io/gm-blog/tags/</loc>
+    <loc>https://tavomartinez88.github.io/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tavomartinez88.github.io/posts/slackbot-aws-18-07-2021/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tavomartinez88.github.io/posts/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tavomartinez88.github.io/tags/slack/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tavomartinez88.github.io/tags/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tavomartinez88.github.io/tags/terraform/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tavomartinez88.github.io/categories/</loc>
   </url>
 </urlset>
