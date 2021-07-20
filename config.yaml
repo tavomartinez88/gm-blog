@@ -5,6 +5,7 @@ theme: "hugo-profile"
 
 googleanalytics: UA-xxxxxx-x
 disqusShortname: "gusMartinez-posts"
+disqus_url: "https://gusmartinez-posts-1.disqus.com"
 comments:
   commentable:
     posts: true # Blog posts
