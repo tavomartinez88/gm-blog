@@ -11,3 +11,6 @@
 
 #### Run locally
 - hugo serve -D
+
+#### Build
+- hugo -D
