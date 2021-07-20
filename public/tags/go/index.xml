@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on GusMartinez</title>
-    <link>https://tavomartinez88.github.io/tags/go/</link>
+    <link>https://gusmartinez.netlify.app/tags/go/</link>
     <description>Recent content in Go on GusMartinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ar</language>
-    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tavomartinez88.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gusmartinez.netlify.app/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How do you make a bot using Aws?</title>
-      <link>https://tavomartinez88.github.io/posts/slackbot-aws-18-07-2021/</link>
+      <link>https://gusmartinez.netlify.app/posts/slackbot-aws-18-07-2021/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tavomartinez88.github.io/posts/slackbot-aws-18-07-2021/</guid>
+      <guid>https://gusmartinez.netlify.app/posts/slackbot-aws-18-07-2021/</guid>
       <description>Introduction  Let&amp;rsquo;s go build a bot to inform new releases using Go as language programming, Aws as infraestructure on cloud, Terraform as infraestructure as code.
  Requirements  An account on Aws Go 1.15 or greather installed Terraform 0.13.2 or greather installed Gomock 1.6.0 or greather downloaded Git and Github/GitLab/Bitbucket/Other  The follow picture is our work finished Let&amp;rsquo;s Go!!!!  The fisrt we are need define structure to our project, this is :</description>
     </item>

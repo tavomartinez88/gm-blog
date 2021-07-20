@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on GusMartinez</title>
-    <link>https://tavomartinez88.github.io/categories/</link>
+    <link>https://gusmartinez.netlify.app/categories/</link>
     <description>Recent content in Categories on GusMartinez</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-ar</language><atom:link href="https://tavomartinez88.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>es-ar</language><atom:link href="https://gusmartinez.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

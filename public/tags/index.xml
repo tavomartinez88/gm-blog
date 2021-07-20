@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on GusMartinez</title>
-    <link>https://tavomartinez88.github.io/tags/</link>
+    <link>https://gusmartinez.netlify.app/tags/</link>
     <description>Recent content in Tags on GusMartinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ar</language>
-    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tavomartinez88.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://gusmartinez.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aws</title>
-      <link>https://tavomartinez88.github.io/tags/aws/</link>
+      <link>https://gusmartinez.netlify.app/tags/aws/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tavomartinez88.github.io/tags/aws/</guid>
+      <guid>https://gusmartinez.netlify.app/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://tavomartinez88.github.io/tags/go/</link>
+      <link>https://gusmartinez.netlify.app/tags/go/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tavomartinez88.github.io/tags/go/</guid>
+      <guid>https://gusmartinez.netlify.app/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slack</title>
-      <link>https://tavomartinez88.github.io/tags/slack/</link>
+      <link>https://gusmartinez.netlify.app/tags/slack/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tavomartinez88.github.io/tags/slack/</guid>
+      <guid>https://gusmartinez.netlify.app/tags/slack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Terraform</title>
-      <link>https://tavomartinez88.github.io/tags/terraform/</link>
+      <link>https://gusmartinez.netlify.app/tags/terraform/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tavomartinez88.github.io/tags/terraform/</guid>
+      <guid>https://gusmartinez.netlify.app/tags/terraform/</guid>
       <description></description>
     </item>
     
