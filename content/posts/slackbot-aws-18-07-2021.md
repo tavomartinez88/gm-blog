@@ -1,7 +1,7 @@
 ---
 title: "How do you make a bot using Aws?"
 date: 2021-07-18
-draft: true
+draft: false
 tags: ["Aws", "Go", "Slack", "Terraform"]    
 ---
 
